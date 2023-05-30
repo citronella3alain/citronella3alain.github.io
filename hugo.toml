@@ -8,20 +8,23 @@ paginate = 20
 
 disqusShortname = "yourdiscussshortname"
 
+[[module.imports]]
+path = "github.com/hugo-mods/icons"
+
 [markup.highlight]
 style = "github-dark"
 
 [params]
   author = "Allen Mao"
-  info = "MLOps, Piano, Languages, and More"
+  info = "MLOps, Piano, and More"
   description = "Allen Mao's personal website"
   keywords = "blog,developer,personal"
-  #avatarurl = "images/avatar.jpg"
+  avatarurl = "images/allen_piano_fattal.jpg"
   #gravatar = "john.doe@example.com"
 
 
 
-  since = 2019
+  since = 2023
 
   enableTwemoji = true
 
@@ -43,17 +46,12 @@ style = "github-dark"
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/johndoe/"
+  url = "https://github.com/citronella3alain/"
 [[params.social]]
-  name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
-  weight = 2
-  url = "https://gitlab.com/johndoe/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
+  name = "YouTube"
+  icon = "fa fa-youtube fa-2x"
   weight = 3
-  url = "https://twitter.com/johndoe/"
+  url = "https://youtube.com/@allenmao8935"
 
 # Menu links
 [[menu.main]]
