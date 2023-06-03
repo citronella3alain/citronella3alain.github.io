@@ -1,67 +1,55 @@
 baseurl = "http://www.example.com"
-title = "Quotations from Not-a-Chairman Mao"
-theme = ["hugo-embed-pdf-shortcode", "hugo-coder"]
-enableInlineShortcodes = true
-languagecode = "en"
-defaultcontentlanguage = "en"
+theme = [ "hugo-embed-pdf-shortcode"]
+languageCode = "en-us"
 
-paginate = 20
-
-disqusShortname = "yourdiscussshortname"
-
+[module]
 [[module.imports]]
-path = "github.com/hugo-mods/icons"
-
+  path = "github.com/hugo-mods/icons"
+[[module.imports]]
+  path = 'github.com/LordMathis/hugo-theme-nightfall'
 [markup.highlight]
 style = "github-dark"
 
 [params]
   author = "Allen Mao"
-  info = "MLOps, Piano, and More"
-  description = "Allen Mao's personal website"
+  user = "allen"
+  hostname = "maosays"
   keywords = "blog,developer,personal"
   avatarurl = "images/bridge_chicago.jpg"
   #gravatar = "john.doe@example.com"
   since = 2023
-  math = true
   colorScheme = "auto"
-  enableTwemoji = true
   
-  hidecolorschemetoggle = false
-
+  # Social links
+  [[params.social]]
+    key = 0
+    name = "github"
+    url = "https://github.com/citronella3alain/"
+  [[params.social]]
+    key = 1
+    name = "youtube"
+    url = "https://youtube.com/@allenmao8935"
+  [[params.social]]
+    key = 0
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/allen-s-mao/"
 [taxonomies]
   category = "categories"
   series = "series"
   tag = "tags"
   author = "authors"
 
-# Social links
-[[params.social]]
-  name = "Github"
-  icon = "fa fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/citronella3alain/"
-[[params.social]]
-  name = "YouTube"
-  icon = "fa fa-youtube fa-2x"
-  weight = 3
-  url = "https://youtube.com/@allenmao8935"
-[[params.social]]
-  name = "LinkedIn"
-  icon = "fa fa-linkedin fa-2x"
-  weight = 2
-  url = "https://www.linkedin.com/in/allen-s-mao/"
-
 # Menu links
-[[menu.main]]
-  name = "Blog"
-  weight = 2
-  url  = "posts/"
-[[menu.main]]
-  name = "About"
-  weight = 1
-  url = "about/"
-[[menu.main]]
-  name = "Résumé"
-  weight = 3
-  url = "cv/"
+[menu]
+  [[menu.header]]
+    name = "blog"
+    weight = 2
+    url  = "posts/"
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about/"
+  [[menu.header]]
+    name = "cv"
+    weight = 3
+    url = "cv/"

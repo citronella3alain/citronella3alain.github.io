@@ -4,9 +4,9 @@ date = 2023-05-29T18:28:49Z
 title = "Meowwww"
 description = ""
 slug = ""
-authors = ["Friend Cat # 1"]
+authors = ["fc3"]
 tags = []
-categories = []
+categories = ["cat"]
 externalLink = ""
 series = []
 +++
