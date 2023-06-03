@@ -1,6 +1,7 @@
 baseurl = "http://www.example.com"
-title = "Allen Mao"
-theme = "hugo-coder"
+title = "Quotations from Not-a-Chairman Mao"
+theme = ["hugo-embed-pdf-shortcode", "hugo-coder"]
+enableInlineShortcodes = true
 languagecode = "en"
 defaultcontentlanguage = "en"
 
@@ -19,21 +20,14 @@ style = "github-dark"
   info = "MLOps, Piano, and More"
   description = "Allen Mao's personal website"
   keywords = "blog,developer,personal"
-  avatarurl = "images/allen_piano_fattal.jpg"
+  avatarurl = "images/bridge_chicago.jpg"
   #gravatar = "john.doe@example.com"
-
-
-
   since = 2023
-
-  enableTwemoji = true
-
+  math = true
   colorScheme = "auto"
+  enableTwemoji = true
+  
   hidecolorschemetoggle = false
-
-  # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
 
 [taxonomies]
   category = "categories"
@@ -52,13 +46,22 @@ style = "github-dark"
   icon = "fa fa-youtube fa-2x"
   weight = 3
   url = "https://youtube.com/@allenmao8935"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/allen-s-mao/"
 
 # Menu links
 [[menu.main]]
   name = "Blog"
-  weight = 1
+  weight = 2
   url  = "posts/"
 [[menu.main]]
   name = "About"
-  weight = 2
+  weight = 1
   url = "about/"
+[[menu.main]]
+  name = "Résumé"
+  weight = 3
+  url = "cv/"
